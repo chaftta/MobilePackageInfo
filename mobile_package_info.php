@@ -56,7 +56,7 @@ class MobilePackageInfo {
 			return new PackageInfo(
 				$plistData['CFBundleIdentifier'],
 				$plistData['CFBundleShortVersionString'],
-				(int)$plistData['CFBundleShortVersionString']
+				(int)$plistData['CFBundleVersion']
 			);
 		} catch (Exception) {
 			return null;
